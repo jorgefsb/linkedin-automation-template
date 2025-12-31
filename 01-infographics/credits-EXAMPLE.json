@@ -1,0 +1,44 @@
+{
+  "version": "1.0",
+  "last_updated": "YYYY-MM-DD",
+  "total_infographics": 0,
+  "instructions": "Track original authors of infographics. ALWAYS investigate and give proper credit. See: ../02-templates/credits-template.md",
+
+  "infographics": [
+    {
+      "filename": "example-infographic.jpg",
+      "category": "metrics",
+      "original_author": "Author Name",
+      "source_url": "https://...",
+      "twitter_handle": "@author",
+      "linkedin_handle": "linkedin.com/in/author",
+      "license": "Creative Commons BY / All Rights Reserved / Unknown",
+      "notes": "Any additional context about this infographic",
+      "verified": true,
+      "research_priority": "high"
+    }
+  ],
+
+  "statistics": {
+    "total": 0,
+    "verified": 0,
+    "pending_research": 0,
+    "priority_high": 0,
+    "priority_medium": 0,
+    "priority_low": 0,
+    "with_known_author": 0,
+    "unknown_author": 0
+  },
+
+  "default_credit_template": "📊 Source: Multiple industry sources\\n🔗 Analysis by [Your Name]",
+
+  "important_notes": [
+    "ALWAYS research author before publishing",
+    "Use reverse image search if you don't know source",
+    "Give credit even if not legally required",
+    "Update this file every time you verify an author",
+    "See: ../02-templates/credits-template.md for complete guide"
+  ],
+
+  "next_step": "Research authors of high priority infographics before generating posts"
+}

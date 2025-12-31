@@ -1,0 +1,50 @@
+# Personal infographics and content
+01-infographics/categorized/**/*.jpg
+01-infographics/categorized/**/*.jpeg
+01-infographics/categorized/**/*.png
+01-infographics/categorized/**/*.gif
+01-infographics/categorized/**/*.pdf
+
+# Generated posts (user-specific)
+03-content-queue/**/*.md
+04-published/**/*.md
+
+# Analytics data (user-specific)
+07-analytics/**/*.csv
+07-analytics/**/*.xlsx
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Credentials and secrets
+*.key
+*.secret
+*.env
+
+# User-specific
+credits.json
+!credits-EXAMPLE.json
+
+# Logs
+*.log
+
+# Editor directories and files
+.vscode/*
+.idea
+*.swp
+*.swo
+*~
