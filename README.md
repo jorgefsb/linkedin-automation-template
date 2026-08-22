@@ -1,8 +1,16 @@
-# 🚀 LinkedIn Content Automation System
+<div align="center">
 
-**A content factory that turns 1 infographic → 4-8 unique posts**
+<img src="./assets/readme-banner.svg" width="1000" alt="LinkedIn Content Automation — una fuente, cuatro formatos, una voz consistente." />
 
-Generate 2-4 high-quality LinkedIn posts daily with minimal effort using AI-powered templates and workflows.
+[🐙 Usar el template](https://github.com/jorgefsb/linkedin-automation-template) · [📚 Leer la guía](./docs/SETUP.md) · **Estado:** template abierto v1.0
+
+</div>
+
+## 👾 ¿Qué desbloquea?
+
+Un sistema reutilizable para convertir una infografía o fuente visual en **cuatro borradores distintos**, sin perder atribución ni voz de marca.
+
+La IA acelera el primer draft; tú sigues aportando criterio, experiencia, edición y conversación real con la comunidad.
 
 ---
 
@@ -14,9 +22,7 @@ This system helps you create consistent, high-quality LinkedIn content at scale 
 - **Generating multiple post variations** from a single image (Educational, Data-driven, Hot takes, Case studies)
 - **Maintaining consistent brand voice** across all content
 - **Managing content attribution** and credits properly
-- **Building a sustainable publishing schedule** (2-4 posts/day)
-
-**Result:** 60-120 posts/month in ~2 hours total work (vs 60+ hours manually)
+- **Building a publishing rhythm** you can validate with your own audience
 
 ---
 
@@ -37,10 +43,6 @@ This system helps you create consistent, high-quality LinkedIn content at scale 
         ↓
 Schedule & Publish
 ```
-
-**Leverage:** 30X (from 1 hour/post → 10 min/post)
-
----
 
 ## 🗂️ System Structure
 
@@ -72,7 +74,7 @@ linkedin-automation/
 
 ```bash
 # Clone this repo
-git clone https://github.com/[your-username]/linkedin-automation-template
+git clone https://github.com/jorgefsb/linkedin-automation-template.git
 cd linkedin-automation-template
 
 # Add your infographics/images
@@ -81,7 +83,7 @@ cp your-infographics/* 01-infographics/categorized/[category]/
 
 ### Step 2: Configure Your Brand Voice
 
-Edit `02-templates/brand-adapters/personal-brand.md`:
+Edit `02-templates/brand-adapters/personal-brand-TEMPLATE.md`:
 - Replace placeholder content with your voice/tone
 - Add your expertise areas
 - Define your audience
@@ -228,7 +230,7 @@ Template included in `02-templates/credits-template.md`
    - Yours: Your industry topics
 
 2. **Modify Brand Voice:**
-   - Edit `02-templates/brand-adapters/personal-brand.md`
+   - Edit `02-templates/brand-adapters/personal-brand-TEMPLATE.md`
    - Define your tone, expertise, audience
 
 3. **Adjust Post Formats:**
@@ -241,23 +243,15 @@ Template included in `02-templates/credits-template.md`
 
 ---
 
-## 📊 Expected Results
+## 📊 Qué validar
 
-### Month 1 (Validation):
-- 60 posts published (2/day)
-- 3%+ engagement rate
-- +100 new followers
-- 5-10 leads/DMs generated
-- <7 hours total time invested
+El template no garantiza volumen, engagement, seguidores ni leads. Empieza con un batch pequeño y mide:
 
-### Month 3 (Optimization):
-- Scale to 3-4 posts/day if metrics support
-- 4%+ engagement rate
-- +300 new followers
-- 20-30 leads generated
-- <5 hours total time invested
-
-**North Star Metric:** Leads Generated / Hour Invested
+- Tiempo de edición por borrador
+- Consistencia de voz después de tu revisión
+- Calidad de comentarios y conversaciones
+- Guardados y compartidos, si son relevantes para tu objetivo
+- Leads útiles por hora invertida, cuando el contenido tenga objetivo comercial
 
 ---
 
@@ -357,24 +351,6 @@ MIT License - Use freely, attribution appreciated
 
 ---
 
-## 📊 Case Study
-
-**Original use case (anonymized):**
-- Industry: Game development content
-- Volume: 2 posts/day → 60 posts/month
-- Time: 2 hours/month (vs 60 hours manually)
-- Leverage: 30X
-- Engagement: 3-5% average
-- Leads: 10-20/month
-
-**Your results will vary based on:**
-- Your niche
-- Content quality
-- Audience size
-- Posting consistency
-
----
-
 ## ⚠️ Important Notes
 
 **This system is NOT:**
@@ -421,9 +397,7 @@ MIT License - Use freely, attribution appreciated
 
 ---
 
-**Ready to 10X your LinkedIn content output?**
-
-**Clone, customize, and start shipping.** 🚀
+**¿Listo para probar el loop? Clona, personaliza, publica un batch pequeño y aprende de los datos.** 🚀
 
 ---
 
