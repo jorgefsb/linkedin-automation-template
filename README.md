@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://github.com/jorgefsb/linkedin-automation-template/blob/main/docs/SETUP.md"><img src="docs/readme/banner-en.svg" width="1000" alt="LinkedIn Automation Template: One infographic goes in, four LinkedIn drafts come out. You bring the judgment." /></a>
+<a href="./docs/SETUP.md"><img src="docs/readme/banner-en.svg" width="1000" alt="LinkedIn Automation Template: One infographic goes in, four LinkedIn drafts come out. You bring the judgment." /></a>
 
 <br />
 
@@ -9,7 +9,7 @@
 
 <br />
 
-**[▶ Start with the 15-minute guide](https://github.com/jorgefsb/linkedin-automation-template/blob/main/docs/SETUP.md)** · More projects at [github.com/jorgefsb](https://github.com/jorgefsb)
+**[▶ Start with the 15-minute guide](./docs/SETUP.md)** · More projects at [github.com/jorgefsb](https://github.com/jorgefsb)
 
 </div>
 
