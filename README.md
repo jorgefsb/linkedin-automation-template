@@ -1,406 +1,84 @@
 <div align="center">
 
-<img src="./assets/readme-banner.svg" width="1000" alt="LinkedIn Content Automation — una fuente, cuatro formatos, una voz consistente." />
+<a href="https://github.com/jorgefsb/linkedin-automation-template/blob/main/docs/SETUP.md"><img src="docs/readme/banner-en.svg" width="1000" alt="LinkedIn Automation Template: One infographic goes in, four LinkedIn drafts come out. You bring the judgment." /></a>
 
-[🐙 Usar el template](https://github.com/jorgefsb/linkedin-automation-template) · [📚 Leer la guía](./docs/SETUP.md) · **Estado:** template abierto v1.0
+<br />
+
+<img src="docs/readme/lang-en-on.svg" height="44" alt="English, current language" />
+<a href="./README.es.md"><img src="docs/readme/lang-es.svg" height="44" alt="Leer en español" /></a>
+
+<br />
+
+**[▶ Start with the 15-minute guide](https://github.com/jorgefsb/linkedin-automation-template/blob/main/docs/SETUP.md)** · More projects at [github.com/jorgefsb](https://github.com/jorgefsb)
 
 </div>
 
-## 👾 ¿Qué desbloquea?
+---
 
-Un sistema reutilizable para convertir una infografía o fuente visual en **cuatro borradores distintos**, sin perder atribución ni voz de marca.
+<p align="center"><img src="docs/readme/flow-en.svg" width="1000" alt="Flow diagram. This is not a screenshot: the template is folders, templates and prompts, not an app."></p>
+<p align="center"><sub>Flow diagram. This is not a screenshot: the template is folders, templates and prompts, not an app.</sub></p>
 
-La IA acelera el primer draft; tú sigues aportando criterio, experiencia, edición y conversación real con la comunidad.
+## What is it?
+
+An open template that turns one infographic or image into four LinkedIn post drafts without losing credit to the source or your own voice.
+
+## Who is it for?
+
+For professionals and small teams who post on LinkedIn, already use an AI like Claude or ChatGPT and have visual material sitting unused.
+
+## What pain does it solve?
+
+Posting often takes time. And when you hand it to an AI with no system, you get generic content in the same voice as everyone else and with no credit to whoever made the source.
+
+## The proposal
+
+A system of folders, templates and prompts. One visual source goes in and four drafts in different formats come out, each with its credits. The AI speeds up the first draft; you bring judgment, experience, editing and the conversation with your community.
+
+| Format | Template |
+|---|---|
+| Educational | [`educational.md`](./02-templates/post-templates/educational.md) |
+| Data-driven | [`data-driven.md`](./02-templates/post-templates/data-driven.md) |
+| Hot take | [`hot-take.md`](./02-templates/post-templates/hot-take.md) |
+| Case study | [`case-study.md`](./02-templates/post-templates/case-study.md) |
+
+## How do I use it?
+
+1. Clone the repo or click "Use this template".
+2. Put your infographics in `01-infographics/` and fill in their credits using `credits-EXAMPLE.json`.
+3. Describe your voice in `02-templates/brand-adapters/`.
+4. Run the prompt in `06-prompts/batch-generator.md` in your AI.
+5. Edit the drafts and publish them yourself.
+
+The step-by-step guide is in [docs/SETUP.md](./docs/SETUP.md).
+
+## When it fits and when it doesn't
+
+It fits if you already have infographics, charts or slides and want to get more out of them with a repeatable method.
+
+It does not post for you or connect to LinkedIn: it produces drafts that you review. It does not promise results either; this repo ships no verified metrics.
+
+## Where can I try it?
+
+Right here: **[docs/SETUP.md](./docs/SETUP.md)**. There is nothing to install.
+
+## How far we got
+
+Template 1.0 with four post formats, a voice adapter, a batch generator, a translator and a credits system. Content last updated on 22 August 2026.
+
+Pending: a full Spanish translation of the guide.
+
+## For builders
+
+There is no code to run: it is Markdown files and one example JSON. The [full guide](./docs/GUIDE.md) explains the structure, the publishing strategy and how to adapt it to your niche. There is also an [FAQ](./docs/FAQ.md), [workflows](./docs/WORKFLOWS.md) and [customization](./docs/CUSTOMIZATION.md).
+
+## License
+
+[MIT](./LICENSE). Use it, change it and share it.
 
 ---
 
-## 🎯 What Is This?
+<div align="center">
 
-This system helps you create consistent, high-quality LinkedIn content at scale by:
+<sub>Made with love ❤️🎮 by <a href="https://jorgesuarez.com.mx">JorgeSuarez.com.mx</a> · <a href="https://github.com/jorgefsb">More projects</a> · <a href="./README.es.md">Leer en español</a><br />Documentation updated on 10 Nov 2026.</sub>
 
-- **Leveraging existing visual content** (infographics, data visualizations, etc.)
-- **Generating multiple post variations** from a single image (Educational, Data-driven, Hot takes, Case studies)
-- **Maintaining consistent brand voice** across all content
-- **Managing content attribution** and credits properly
-- **Building a publishing rhythm** you can validate with your own audience
-
----
-
-## 📊 How It Works
-
-### The Content Factory Concept:
-
-```
-1 Infographic/Image
-        ↓
-[AI Batch Generator]
-        ↓
-4 Different Post Formats:
-├── Educational (list/tips format)
-├── Data-driven (benchmarks/numbers)
-├── Hot Take (controversial insight)
-└── Case Study (real examples)
-        ↓
-Schedule & Publish
-```
-
-## 🗂️ System Structure
-
-```
-linkedin-automation/
-│
-├── 01-infographics/          # Your visual content library
-│   └── categorized/           # Organize by topic
-│
-├── 02-templates/              # Reusable post formats
-│   ├── post-templates/        # 4 core formats
-│   └── brand-adapters/        # Voice & tone guidelines
-│
-├── 03-content-queue/          # Generated posts ready to publish
-│
-├── 06-prompts/                # AI prompts (Claude, ChatGPT, etc.)
-│   ├── batch-generator.md     # Core engine
-│   ├── translator.md          # EN → other languages
-│   └── brand-adapter.md       # Multi-brand content
-│
-└── docs/                      # Documentation
-```
-
----
-
-## ⚡ Quick Start (15 minutes)
-
-### Step 1: Setup Your Content Library
-
-```bash
-# Clone this repo
-git clone https://github.com/jorgefsb/linkedin-automation-template.git
-cd linkedin-automation-template
-
-# Add your infographics/images
-cp your-infographics/* 01-infographics/categorized/[category]/
-```
-
-### Step 2: Configure Your Brand Voice
-
-Edit `02-templates/brand-adapters/personal-brand-TEMPLATE.md`:
-- Replace placeholder content with your voice/tone
-- Add your expertise areas
-- Define your audience
-
-### Step 3: Generate Your First Batch
-
-Use the batch generator prompt with Claude/ChatGPT:
-
-```
-"Generate 4 LinkedIn posts using this infographic: [describe image]
-
-Use the template at: 06-prompts/batch-generator.md
-
-My brand voice: [describe your tone/expertise]"
-```
-
-### Step 4: Publish & Iterate
-
-- Review generated posts
-- Adjust based on your voice
-- Publish 2-3 to test engagement
-- Refine templates based on performance
-
----
-
-## 📝 Core Components
-
-### 1. Post Templates (4 Formats)
-
-**Educational:**
-- List of tips/tricks/frameworks
-- Teaching-focused
-- High saves/shares
-
-**Data-Driven:**
-- Benchmarks, ranges, numbers
-- Credibility-building
-- Thought leadership
-
-**Hot Take:**
-- Controversial opinions
-- Debate-generating
-- High engagement (comments)
-
-**Case Study:**
-- Real examples/analysis
-- Lead generation
-- Authority-building
-
----
-
-### 2. AI Prompts (Works with Claude, ChatGPT, etc.)
-
-**Batch Generator:**
-- Input: 1 infographic
-- Output: 4 posts (different formats)
-- Time: 10-15 min
-
-**Translator:**
-- Input: Post in language A
-- Output: Post in language B (culturally adapted)
-- Time: 5 min
-
-**Brand Adapter:**
-- Input: Generic post
-- Output: Post adapted to your voice
-- Time: 10 min
-
----
-
-### 3. Content Organization
-
-**By Category (Suggested):**
-- Metrics & Analytics
-- Core Concepts (your expertise area)
-- Engagement & Psychology
-- Case Studies
-- Industry Trends
-- Career & Learning
-- Business Strategy
-
-**Organize yours based on your niche.**
-
----
-
-## 🎯 Publishing Strategy
-
-### Option A: 2 Posts/Day (Recommended for Start)
-
-**Schedule:**
-- Post 1 (9:00 AM): Educational long-form with infographic
-- Post 2 (5:00 PM): Quick insight or hot take
-
-**Weekly Theme Rotation:**
-- Monday: Data & Analytics
-- Tuesday: Core Concepts
-- Wednesday: Engagement/Psychology
-- Thursday: Case Studies
-- Friday: Industry Trends
-- Saturday: Career Advice
-- Sunday: Personal/Behind-the-scenes
-
----
-
-### Option B: 4 Posts/Day (Scale After Validation)
-
-Only scale to 4/day if:
-- Engagement rate >3% consistently
-- Audience doesn't show fatigue
-- You can maintain quality
-
----
-
-## 📋 Credits System
-
-**Always credit original creators:**
-
-Template included in `02-templates/credits-template.md`
-
-```markdown
-[YOUR POST CONTENT]
-
-#YourHashtags
-
----
-📊 Original infographic by @Author
-🔗 Analysis by [Your Name]
-```
-
-**Why this matters:**
-- Professional integrity
-- Avoids legal issues
-- Networking with original creators
-- Community goodwill
-
----
-
-## 🔧 Customization Guide
-
-### Adapt to Your Niche:
-
-1. **Replace Categories:**
-   - Current: Game design, metrics, retention, etc.
-   - Yours: Your industry topics
-
-2. **Modify Brand Voice:**
-   - Edit `02-templates/brand-adapters/personal-brand-TEMPLATE.md`
-   - Define your tone, expertise, audience
-
-3. **Adjust Post Formats:**
-   - Keep the 4 core formats OR
-   - Create your own variations
-
-4. **Update Prompts:**
-   - Modify `06-prompts/` files with your expertise areas
-   - Add industry-specific examples
-
----
-
-## 📊 Qué validar
-
-El template no garantiza volumen, engagement, seguidores ni leads. Empieza con un batch pequeño y mide:
-
-- Tiempo de edición por borrador
-- Consistencia de voz después de tu revisión
-- Calidad de comentarios y conversaciones
-- Guardados y compartidos, si son relevantes para tu objetivo
-- Leads útiles por hora invertida, cuando el contenido tenga objetivo comercial
-
----
-
-## 🛠️ Tools You'll Need
-
-**Required:**
-- AI tool (Claude, ChatGPT, or similar)
-- Image editing (optional, for branding infographics)
-
-**Recommended:**
-- Scheduling tool (Buffer, Hootsuite, LinkedIn native)
-- Analytics tracker (spreadsheet or tool)
-- Canva/Figma (for creating infographics)
-
-**Not required:**
-- Coding skills
-- Design expertise
-- Large budget
-
----
-
-## 💡 Pro Tips
-
-1. **Batch Everything:**
-   - Generate 30 posts in one session (not 1/day)
-   - Review all at once
-   - Schedule for the month
-
-2. **Rotate Themes:**
-   - Don't post 3 "metrics" posts in a row
-   - Variety prevents audience fatigue
-
-3. **Track What Works:**
-   - Save high-performers
-   - Double down on those formats
-   - Iterate templates based on data
-
-4. **Reuse Across Platforms:**
-   - 1 LinkedIn post → 1 Twitter thread → 1 TikTok
-   - Maximum leverage from single content
-
-5. **Credit Generously:**
-   - Even when not legally required
-   - Builds goodwill and network
-
----
-
-## 📚 Documentation
-
-**Included in `/docs`:**
-- `SETUP.md` - Detailed setup instructions
-- `WORKFLOWS.md` - Step-by-step processes
-- `CUSTOMIZATION.md` - How to adapt to your niche
-- `FAQ.md` - Common questions
-
----
-
-## 🤝 Contributing
-
-This is an open-source template. Contributions welcome:
-
-- Submit better prompts
-- Add new post formats
-- Improve documentation
-- Share your results/learnings
-
-**See:** `CONTRIBUTING.md` for guidelines
-
----
-
-## 📄 License
-
-MIT License - Use freely, attribution appreciated
-
----
-
-## 🙏 Credits
-
-**System Design:**
-- Originally created for automating game industry content
-- Adapted as generic template for any niche
-
-**Inspiration:**
-- Content Factory concept from modern media companies
-- AI-assisted workflows from developer productivity tools
-
----
-
-## 🚀 Next Steps
-
-1. **Clone this repo**
-2. **Add your infographics** to `01-infographics/`
-3. **Customize brand voice** in `02-templates/brand-adapters/`
-4. **Generate your first batch** using `06-prompts/batch-generator.md`
-5. **Publish 2-3 posts** to validate
-6. **Iterate based on engagement** data
-
----
-
-## ⚠️ Important Notes
-
-**This system is NOT:**
-- ❌ A "post and ghost" automation
-- ❌ Spam or low-quality content generator
-- ❌ Replacement for authentic engagement
-
-**This system IS:**
-- ✅ A leverage tool for consistent publishing
-- ✅ Template system maintaining quality at scale
-- ✅ Framework requiring your expertise/voice
-
-**You still need to:**
-- Provide the expertise
-- Engage with your audience
-- Refine based on feedback
-- Add your unique insights
-
----
-
-## 💬 Questions?
-
-**Common issues:**
-- Posts don't sound like you → Refine brand adapter
-- Low engagement → Test different formats
-- Running out of content → Expand infographic library
-
-**For detailed help:**
-- Check `/docs` folder
-- Review template examples
-- Modify prompts gradually
-
----
-
-## 🎯 Success Checklist
-
-- [ ] Repo cloned and setup
-- [ ] 10+ infographics added
-- [ ] Brand voice customized
-- [ ] First batch generated (10 posts)
-- [ ] 2-3 posts published
-- [ ] Engagement tracked
-- [ ] Templates refined based on data
-
----
-
-**¿Listo para probar el loop? Clona, personaliza, publica un batch pequeño y aprende de los datos.** 🚀
-
----
-
-**Version:** 1.0
-**Last Updated:** 2025-12-30
-**Maintained By:** Open Source Community
+</div>
