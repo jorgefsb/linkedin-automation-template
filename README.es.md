@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://github.com/jorgefsb/linkedin-automation-template/blob/main/docs/SETUP.md"><img src="docs/readme/banner-es.svg" width="1000" alt="LinkedIn Automation Template: Una infografía entra, cuatro borradores de LinkedIn salen. Tú pones el criterio." /></a>
+<a href="./docs/SETUP.md"><img src="docs/readme/banner-es.svg" width="1000" alt="LinkedIn Automation Template: Una infografía entra, cuatro borradores de LinkedIn salen. Tú pones el criterio." /></a>
 
 <br />
 
@@ -9,7 +9,7 @@
 
 <br />
 
-**[▶ Empezar con la guía de 15 minutos](https://github.com/jorgefsb/linkedin-automation-template/blob/main/docs/SETUP.md)** · Más proyectos en [github.com/jorgefsb](https://github.com/jorgefsb)
+**[▶ Empezar con la guía de 15 minutos](./docs/SETUP.md)** · Más proyectos en [github.com/jorgefsb](https://github.com/jorgefsb)
 
 </div>
 
